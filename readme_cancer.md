@@ -6,7 +6,7 @@
 
 * 구강 내시경 사진 내 악성 병변 존재 여부 탐지
 
-![](G:\공유 드라이브\MNC Shared\Project\202009-AI 데이터 - 구강\경진대회\git_repository\img\구강_01.png)
+![](https://raw.githubusercontent.com/mnc-challenge/healthcare_mouth/main/img/%EA%B5%AC%EA%B0%95_01.png)
 
 ## 2. 데이터 상세
 

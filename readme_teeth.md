@@ -6,7 +6,7 @@
 
 * 치아 파노라마 사진 내 치아 위치 검출 및 번호 식별
 
-![](G:\공유 드라이브\MNC Shared\Project\202009-AI 데이터 - 구강\경진대회\git_repository\img\치아_01.png)
+![](https://github.com/mnc-challenge/healthcare_mouth/blob/main/img/%EC%B9%98%EC%95%84_01.png?raw=true)
 
 ## 2. 데이터 상세
 
