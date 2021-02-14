@@ -41,9 +41,9 @@
 ```
 
 * 위 디렉토리 구조를 유지하면서 작업 진행해주시기 바랍니다.
-
 * <span style="color:red">**/USER_WORKSPACE, /src, /weights 에서만 하위 디렉토를 만들어 작업하시기 바랍니다.**</span>
 * 디렉토리 이슈로 재현성 검증 실패 시 탈락 사유가 될 수 있으니 유의하시기 바랍니다.
+* /DATA 는 읽기 권한만 부여합니다.
 
 ## 2. 최종 결과물 저장 형식
 
@@ -134,6 +134,6 @@ random.seed(SEED)
   * result: 제출파일 경로, str
 * 실행
 
-```python
+```bash
 python submit.py
 ```
