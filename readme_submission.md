@@ -86,7 +86,7 @@
   1. 재학습된 모델로(train.sh 로 생성한 모델) 추론한 결과 파일(inference.sh 로 생성한 모델)의 채점결과가 리더보드상 점수와 같음
   2. 최종 제출 파일(result.json)의 채점 결과가 리더보드상 점수와 같음
   3. 학습 시 외부 데이터를 참조하거나, 테스트 데이터를 활용하지 않았음
-  4. 기타 데이터 유출 등 부정행위 소지가 없음
+  4.  데이터 유출 등 기타 부정행위 소지가 없음
 * 시드 고정을 하지 않으면 재학습 할 때 마다 다른 모델이 생성될 수 있습니다. 
   * pytorch, tensorflow 시드 고정 코드를 참고 바랍니다.
   * 환경에 따라 시드 고정에 실패할 수 있으니, 반드시 재학습 시 동일한 모델이 나오는지 확인하시기 바랍니다.
@@ -96,6 +96,7 @@
 import torch
 import numpy as np
 import random
+
 random_seed = 42
 torch.manual_seed(random_seed)
 torch.backends.cudnn.deterministic = True
@@ -107,7 +108,6 @@ torch.cuda.manual_seed(random_seed)
 
 ```python
 # tensorflow 시드 고정
-
 import os
 import tensorflow as tf
 import numpy as np
@@ -125,7 +125,7 @@ random.seed(SEED)
 
 * submit.py  내 submit 함수로 추론결과를 제출하고, 리더보드 상에서 결과를 확인할 수 있습니다.
 * 입력인자
-  * task_no:    테스크 번호(1: 구강암, 2: 치아), int
+  * task_no:  테스크 번호(1: 구강암, 2: 치아), int
   * user_id: 사용자 아이디, str
   * pwd: 사용자 비밀번호, str
   * modelnm:  제출파일 식별 문자, str
