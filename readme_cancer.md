@@ -35,7 +35,8 @@
 ## 3. 제출 파일 형식
 
 * csv 포맷
-* pred 열에는 암(1)에 대한 예sy측 확률 값(predicted proba)으로 작성
+  * src/sample_submission_cancer.csv 참고
+* pred 열에는 암(1)에 대한 예측 확률 값(predicted proba)으로 작성
 * 파일명 순서 무관
 * 자세한 제출 방법은 readme_submission.md 참조
 
