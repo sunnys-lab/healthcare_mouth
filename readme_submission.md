@@ -135,7 +135,7 @@ random.seed(SEED)
 
 * submit.py  내 submit 함수로 추론결과를 제출하고, 리더보드 상에서 결과를 확인할 수 있습니다.
 * 입력인자
-  * task_no:  테스크 번호(1: 구강암, 2: 치아)
+  * task_no:  테스크 번호(1: 치아, 2: 구강암)
   * user_id: 사용자 아이디
   * pwd: 사용자 비밀번호
   * modelnm:  제출파일 식별 문자
