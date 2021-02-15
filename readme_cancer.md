@@ -27,6 +27,7 @@
 ### 이미지 파일명 규칙
 * 예시: A5_28_P_N.jpg, F2_5437_T_C.jpg. 단, 테스트셋은 F2_5438_X_X.jpg
 * 환자ID: 기관코드(A-F) + 기관별 환자번호
+* 이미지 일련번호 (중복되지 않음)
 * 해부학적 부위: 촬영 부위의 해부학적 위치 (T: Tongue, P: Palate, B: Buccal mucosa, O: Others)
 * **진단라벨**: N: Normal / B: Benign / C: Cancer 
 
