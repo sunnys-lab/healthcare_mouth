@@ -6,11 +6,11 @@
 
 [2. 최종 결과물 저장 형식](# 2. 최종 결과물 저장 형식)
 
-[3. 최종 제출 파일(result.json)](#3. 최종 제출 파일(result.json))
+[3. 최종 제출 파일(result.json)](# 3. 최종 제출 파일(result.json))
 
-[4. 재현성 검증 및 시드 고정](#4. 재현성 검증 및 시드 고정[)
+[4. 재현성 검증 및 시드 고정](# 4. 재현성 검증 및 시드 고정)
 
-[5.  추론 결과 제출](#5. 추론 결과 제출)
+[5.  추론 결과 제출](# 5. 추론 결과 제출)
 
 ## 1. 디렉토리 구조 유지
 
@@ -26,6 +26,7 @@
 		\_TEST						: 치아 테스트 데이터 폴더 
 \_USER								: 참가자 사용 폴더
 	\_USER_WORKSPACE				: 참가자 작업 폴더
+		* submit.py					: 결과 제출 스크립트
 	\_INFERENCE						: 최종 결과물 폴더
 		\_TEETH						: 치아 최종 결과물 폴더(구강암 디렉토리와 구조 동일)
 		\_CANCER					: 구강암 최종 결과물 폴더
@@ -47,7 +48,7 @@
 
 ## 2. 최종 결과물 저장 형식
 
-* 최종 결과물은 INFERENCE/{대회명}/ 아래 디렉토리 구조를 유지하면서 저장해 주시기 바랍니다.
+* 최종 결과물은 INFERENCE/{대회명}/ 디렉토리 구조를 유지하면서 저장해 주시기 바랍니다.
 
 * train.sh , inference.sh
 
@@ -80,7 +81,8 @@
     1. train.py, inference.py  입력 인자 설명
     2. 리더보드 스코어 및 등수
     3. 활용 모델 간략한 설명
-    4. 기타
+    4. 파이썬 라이브러리 가상환경 활성화 방법
+    5. 기타
 
 ## 3. 최종 제출 파일(result.json)
 
@@ -133,15 +135,16 @@ random.seed(SEED)
 
 * submit.py  내 submit 함수로 추론결과를 제출하고, 리더보드 상에서 결과를 확인할 수 있습니다.
 * 입력인자
-  * task_no:  테스크 번호(1: 구강암, 2: 치아), int
-  * user_id: 사용자 아이디, str
-  * pwd: 사용자 비밀번호, str
-  * modelnm:  제출파일 식별 문자, str
+  * task_no:  테스크 번호(1: 구강암, 2: 치아)
+  * user_id: 사용자 아이디
+  * pwd: 사용자 비밀번호
+  * modelnm:  제출파일 식별 문자
     * 참가자가 본인이 제출한 파일을 식별할 수 있도록 자유롭게 작성 가능
     * 웹페이지에서 확인 가능
-  * result: 제출파일 경로, str
+  * result: 제출파일 경로
 * 실행
 
 ```bash
-python submit.py
+python submit.py --task_no 1 --user_id test_user --pwd 1234 --modelnm first --result ./sample_submission.csv
 ```
+
