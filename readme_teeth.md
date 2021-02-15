@@ -81,7 +81,6 @@
 ```
 
 * 제출 파일 양식
-  * src/sample_submission_teeth.json 참고
 
 ```json
 {
