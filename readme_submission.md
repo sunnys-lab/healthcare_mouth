@@ -14,6 +14,8 @@
 
 ## 1. 디렉토리 구조 유지
 
+![](https://raw.githubusercontent.com/mnc-challenge/healthcare_mouth/main/img/directory.png)
+
 ```bash
 # 디렉토리 구조
 \_DATA								: 데이터 폴더
@@ -21,7 +23,7 @@
 		\_TRAIN						: 구강암 학습 데이터 폴더
 		\_TEST						: 구강암 테스트 데이터 폴더
 	\_TEETH							: 치아 데이터 폴더
-		* train_label.json			: 치아 학습 라벨 폴더
+		* train_label.json			: 치아 학습 라벨 파일
 		\_TRAIN						: 치아 학습 데이터 폴더
 		\_TEST						: 치아 테스트 데이터 폴더 
 \_USER								: 참가자 사용 폴더
@@ -39,14 +41,17 @@
 				* result.json(csv)	: 결과 파일
 			\_src					: train.py, infernece.py 참조 스크립트
 			\_weights				: 모델(가중치) 폴더
+   \_PACKAGES						: 추가 라이브러리 요청시 패키지 파일 저장 경로
 ```
 
-* 위 디렉토리 구조를 유지하면서 작업 진행해주시기 바랍니다.
+* 최초 서버 세팅 시 위와 같은 형태로 디렉토리 구조를 제공합니다
+  * 위 디렉토리 구조를 유지하면서 작업 진행해주시기 바랍니다.
 * <span style="color:red">**/USER_WORKSPACE, /src, /weights 에서만 하위 디렉토를 만들어 작업하시기 바랍니다.**</span>
 * 디렉토리 이슈로 재현성 검증 실패 시 탈락 사유가 될 수 있으니 유의하시기 바랍니다.
 * /DATA 는 읽기 권한만 부여합니다.
 * /USER 디렉토리는 참가팀 당 100G 씩 할당합니다. 
   * 100G를 넘을 경우 디렉토리 정리 요청을 드릴 수 있습니다.
+* 환경 설정 기간 이후 추가 라이브러리 요청 시, 요청하신 패키지 파일을 /PACKAGES 로 업로드 합니다
 
 ## 2. 최종 결과물 저장 형식
 
@@ -142,7 +147,7 @@ random.seed(SEED)
   * pwd: 사용자 비밀번호
   * modelnm:  제출파일 식별 문자
     * 참가자가 본인이 제출한 파일을 식별할 수 있도록 자유롭게 작성 가능
-    * 웹페이지에서 확인 가능
+    * `제출이력`에서 확인 가능
   * result: 제출파일 경로
 * 실행
 
