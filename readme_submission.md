@@ -41,7 +41,7 @@
 				* result.json(csv)	: 결과 파일
 			\_src					: train.py, infernece.py 참조 스크립트
 			\_weights				: 모델(가중치) 폴더
-   \_PACKAGES						: 추가 라이브러리 요청시 패키지 파일 저장 경로
+	\_PACKAGES						: 추가 라이브러리 요청시 패키지 파일 저장 경로
 ```
 
 * 최초 서버 세팅 시 위와 같은 형태로 디렉토리 구조를 제공합니다
